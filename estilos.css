@@ -1,0 +1,48 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    background: rgb(21, 21, 41);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor{
+    width: 500px;
+    height: 300px;
+    position:relative;
+    overflow: hidden;
+}
+
+.img{
+    opacity:1;
+    position:absolute;
+    left: 0;
+    top:0;
+    background-size: cover;
+    width: 500px;
+    height: 300px;
+    transition: all .5s ease-in-out;
+}
+
+.imagen1{
+    transform:scale(1.25);
+    background-image: url("https://st2.depositphotos.com/4211709/7708/i/600/depositphotos_77085751-stock-photo-flower.jpg");
+}
+
+.imagen2{
+    transform:scale(1);
+    background-image: url("https://image.freepik.com/vector-gratis/fondo-paisaje-verano-zoom_23-2148583148.jpg");
+}
+
+.imagen2:hover{
+    opacity:0;
+    transition: all .5s ease-in-out;
+    transform: scale(1.25);    
+}
+
+.contenedor:hover>.imagen1{
+    transition: all .5s ease-in-out;
+    transform: scale(1);
+}
+
